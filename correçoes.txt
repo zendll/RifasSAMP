@@ -1,0 +1,3 @@
+Ce voce for querer, criar mais de 2 rifas será nescessario algumas correçoes no codigo
+Adpte a entrega  de acordo com seu sistema de inventario etcc..
+termnine a parte de configurar os itens no gerenciamento..

@@ -176,15 +176,16 @@ Dialog:DIALOG_RIFAS_COMPRADAS(playerid, response, listitem, inputtext[]) {
 }
 
 stock Carregar_Rifas() {
-    mysql_query(Conexao, "SELECT * FROM `rifas` ORDER BY ID ASC");
-    if (!cache_num_rows()) {
-        printf("Nenhuma rifa encontrada.");
-        return 0;
-    }
-    new rows = cache_num_rows(); 
-    for (new i = 0; i < rows && i < MAX_RIFAS; i++) { 
 
-        new rifaID;
+    mysql_query(Conexao, "SELECT * FROM `rifas` ORDER BY ID ASC");
+
+    if (!cache_num_rows()) 
+       return printf("Nenhuma rifa encontrada.");
+        
+    new rows = cache_num_rows(),
+        rifaID;
+
+    for (new i = 0; i < rows && i < MAX_RIFAS; i++) { 
         cache_get_value_int(i, "ID", rifaID);
         cache_get_value_int(i, "ItemID", E_RIFA_INDEX[i][R_ITEM_ID]);  
         cache_get_value_name(i, "Nome", E_RIFA_INDEX[i][R_ITEM_NOME], 35);

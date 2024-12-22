@@ -2,3 +2,4 @@ Ce voce for querer, criar mais de 2 rifas será nescessario algumas correçoes n
 Adpte a entrega  de acordo com seu sistema de inventario etcc..
 termine a parte de configurar os itens no gerenciamento..
 Sistema nao esta 100% feito. termine o resto
+fix agora exibe os players de cada rifa, exemplo vai exibir somente os players da rifa id selecionada;
